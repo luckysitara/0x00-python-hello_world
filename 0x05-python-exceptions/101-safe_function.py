@@ -5,5 +5,5 @@ def safe_function(fct, *args):
         answer = fct(*args)
         return answer
     except Exception as EM:
-        print('Exception: {}'.format(EM))
+        print('Exception: {}'.format(EM), file=stderr)
         return None
