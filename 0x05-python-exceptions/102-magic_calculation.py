@@ -7,7 +7,7 @@ def magic_calculation(a, b):
                 raise Exception('Too far')
             else:
                 answer += a**b / i
-        except Error:
+        except:
             answer = b + a
             break
         return answer
