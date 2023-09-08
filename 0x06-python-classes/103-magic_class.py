@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-
-"""A class representing a magical circle with radius.This class allows calculating the area and circumference of the circle."""
+"""A class representing a magical circle with radius."""
 class MagicClass:
 
 
