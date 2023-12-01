@@ -6,8 +6,8 @@ import urllib.request
 
 url = 'https://alx-intranet.hbtn.io/status'
 
-re = with urllib.request.urlopen(url):
-    status_page = re.read()
+with urllib.request.urlopen(url) as response:
+    status_page = response.read()
     print('Body response:')
     print('\t- type: {}'.format(type(status_page)))
     print('\t- content: {}'.format(status_page))
