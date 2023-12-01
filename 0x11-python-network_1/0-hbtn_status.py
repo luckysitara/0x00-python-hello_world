@@ -2,11 +2,12 @@
 '''
 Script that fetches https://intranet.hbtn.io/status
 '''
-import urllib.request
+from urllib import request as re
 #from urllib import request
 
 url = 'https://intranet.hbtn.io/status'
-with urllib.request.urlopen(url) as response:
+with re.urlopen(url) as response:
+#with request.urlopen(url) as response:
     the_page = response.read()
     print('Body response:')
     print('\t- type: {}'.format(type(the_page)))
